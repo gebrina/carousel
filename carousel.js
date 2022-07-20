@@ -25,3 +25,22 @@ function prev(){
     }
     carouselImg.src= images[counter];
 }
+let playing=false;
+
+ let timerInaterval = '';
+function autoPlay(){
+    playing = !playing;
+    const play = document.getElementById('play');
+    if(playing){
+        play.innerHTML="||";
+     timerInaterval = setInterval(()=>{
+      next();
+     },3000)
+    }else{
+        play.innerHTML="&#9658;";
+        clearInterval(timerInaterval);
+    }
+    if(playing){
+        aut
+    }
+    }

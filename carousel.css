@@ -11,6 +11,23 @@
     background-size: cover;
     background-image: url('./img/flower.png');
 }
+.play, .stop-playing{
+    position:absolute;
+    bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: .3px .3px 3px white;
+    color: white;
+    transition: all .5s ease;
+    border-radius: 10px;
+    font-size: 50px;
+    background-color: transparent;
+    left:50%;
+}
+:is(.stop-playing,.play):hover{
+    cursor: pointer;
+    box-shadow: .1px .1px 1px white;
+}
 
 .prev,.next{
     color: white;
@@ -23,7 +40,7 @@
     border-radius: 10px;
     transition: all .5s ease-in-out;
 }
-.prev:hover, .next:hover{
+:is(.next,.prev):hover{
     cursor: pointer;
     box-shadow: .1px .1px 2px white;
 }
