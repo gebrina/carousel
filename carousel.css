@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    background-size: cover;
+    background-image: url('./img/flower.png');
+}
+
+.prev,.next{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    padding: 10px;
+    top:40%;
+    box-shadow: .3px .3px 10px white;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.prev:hover, .next:hover{
+    cursor: pointer;
+    box-shadow: .1px .1px 2px white;
+}
+.prev{
+    left: 5px;
+}
+.next{
+    right: 20px;
+}
+
+.carousel{
+    display: flex;
+}
+
+.carousel div img{
+    width: 100vw;
+    height: 100vh;
+}
